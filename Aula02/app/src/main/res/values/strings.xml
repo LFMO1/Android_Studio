@@ -1,0 +1,9 @@
+<resources>
+    <string name="titulo">Marque o item e digite a quantidade</string>
+    <string name="valorTotal">Valor total R$:</string>
+    <string name="calcular">Calcular</string>
+    <string name="tacas">Taças R$</string>
+    <string name="pratos">Pratos R$</string>
+    <string name="garfos">Garfos R$</string>
+    <string name="facas">Facas R$</string>
+</resources>
