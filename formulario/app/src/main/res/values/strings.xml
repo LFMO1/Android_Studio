@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">formulario</string>
+    <string name="dataNascimento">data nascimento</string>
+    <string name="cep">cep</string>
+    <string name="cpf">cpf</string>
+    <string name="hora">hora</string>
+    <string name="preco">preco</string>
+    <string name="telefone">telefone</string>
+</resources>
