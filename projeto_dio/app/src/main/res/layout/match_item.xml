@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_padrao">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivTimeCasa"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="@dimen/margin_padrao"
+            android:layout_marginTop="@dimen/margin_padrao"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/teste" />
+
+        <TextView
+            android:id="@+id/txtTimeCasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padrao"
+            android:layout_marginBottom="@dimen/margin_padrao"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/ivTimeCasa"
+            app:layout_constraintStart_toStartOf="@+id/ivTimeCasa"
+            app:layout_constraintTop_toBottomOf="@+id/ivTimeCasa"
+            tools:text="casa" />
+
+        <ImageView
+            android:id="@+id/ivTimeVisitante"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="@dimen/margin_padrao"
+            android:layout_marginEnd="@dimen/margin_padrao"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/teste2" />
+
+        <TextView
+            android:id="@+id/txtTimeVisitante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padrao"
+            app:layout_constraintEnd_toEndOf="@+id/ivTimeVisitante"
+            app:layout_constraintStart_toStartOf="@+id/ivTimeVisitante"
+            app:layout_constraintTop_toBottomOf="@+id/ivTimeVisitante"
+            tools:text="visitante" />
+
+        <TextView
+            android:id="@+id/txtPlacarTimeCasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="99"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="@+id/ivTimeCasa"
+            app:layout_constraintEnd_toStartOf="@+id/txtContra"
+            app:layout_constraintStart_toEndOf="@+id/ivTimeCasa"
+            app:layout_constraintTop_toTopOf="@+id/ivTimeCasa" />
+
+        <TextView
+            android:id="@+id/txtPlacarTimeVisitante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="99"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="@+id/ivTimeVisitante"
+            app:layout_constraintEnd_toStartOf="@+id/ivTimeVisitante"
+            app:layout_constraintStart_toEndOf="@+id/txtContra"
+            app:layout_constraintTop_toTopOf="@+id/ivTimeVisitante" />
+
+        <TextView
+            android:id="@+id/txtContra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="@+id/ivTimeCasa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivTimeCasa" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
